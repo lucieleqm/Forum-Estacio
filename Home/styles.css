@@ -1,0 +1,76 @@
+body {
+    background-color: #101242;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    left: 0px;
+    top: 0px;
+}
+
+.container {
+    background: #101242;
+
+}
+
+.logo {
+    padding: 5px;
+
+}
+.logo img {
+    display: block;
+    margin-top: 0px;
+    margin-left: 0pt;
+    width: 100%;
+    max-width: 150px;
+    height: 100%;
+    max-height: 87px;
+
+}
+
+.menu {
+    position: absolute;
+    background: #5228AB;
+    width: 100%;
+    left: 0px;
+    top: 80px;
+   
+}
+
+.menu ul {
+    text-align: left;
+}
+
+.menu ul li {
+    display: inline;
+    padding: 35px 20px;
+    font-size: 14px;
+    
+
+}
+.menu ul li a {
+    color: #fff;
+    text-decoration: none; 
+
+}
+.menu ul li a:hover {
+    color:#32EB71
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    left: 0px;
+    bottom: 0%;
+    background-color: #32EB71;
+}
+.rodape {
+    text-align: center;
+    font-size: 14px;
+    color: #101242;
+
+}
