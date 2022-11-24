@@ -60,12 +60,14 @@ main {
 }
 
 .login-box h2 {
-    font-size: 48px;
+    font-size: 42px;
     font-weight: 600;
+    font-family: monospace;
     display: flex;
     justify-content: center;
     margin-bottom: 3rem;
     color: #39F278;
+    letter-spacing: -1px;
 }
 
 form {
@@ -112,6 +114,8 @@ form a {
     color: #fff;
     font-size: 12px;
     text-decoration: none;
+
+    font-family: monospace;
 }
 
 form a:hover {
@@ -145,5 +149,7 @@ form input[type="submit"]:hover {
 
 .login-image {
     display: flex;
+    margin-top: -129px ;
+    margin-left: 470px;
 }
 
