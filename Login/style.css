@@ -1,5 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+:root{
+    
+    --color-dark: hsl(252, 29%, 10%);
+    --color-black: hsl(231, 30%, 13%);
+}
 * {
     margin: 0;
     border: 0;
@@ -8,7 +13,7 @@
 }
 
 body {
-    background-color: #0c0f67;
+    background-color: /*#0c0f67;*/ var(--color-dark);
     min-height: 100vh;
     min-width: 100vh;
     display: flex;
@@ -98,9 +103,10 @@ form {
     margin-bottom: 1rem;
     border-radius: 5px;
     background-color: #6867C4;
+    color: #fff;
 }
 .input-field input:focus {
-    border: 2px solid #39F278;
+    border: 2px solid #39f278
 }
 
 

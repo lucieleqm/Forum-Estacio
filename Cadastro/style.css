@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 
 * {
     margin: 0;
@@ -99,6 +100,7 @@ form {
     margin-bottom: 1rem;
     border-radius: 5px;
     background-color: #6867C4;
+    color: #fff;
 }
 .input-field input:focus {
     border: 2px solid #39F278;

@@ -1,46 +1,468 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fórum</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+    <title>Social Media</title>
+    <!--ICONSCOUT CDN-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
+    <nav>
         <div class="container">
-            <div class="logo">
-                <img src="images/estacio-logo-0-300x300.png" alt="Fórum Estácio">
+            <h2 class="logo">
+                Decoding...
+            </h2>
+            <div class="search-bar">
+                <i class="uil uil-search"></i>
+                <input type="search" placeholder="Pesquise por palavras-chave, assuntos, ou pessoas">
             </div>
-            <nav>
-                <div class="menu">
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#cadeiras">Cadeiras</a></li>
-                        <li><a href="#ranking">Ranking</a></li>
-                        <li><a href="#chat">Chat</a></li>
-                        <li><a href="#regras">Regras</a></li>
-                    </ul>
+            <div class="create">
+                <label class="btn btn-primary" for="create-post">Create</label>
+                <div class="profile-photo">
+                    <img src="images/profile-1.jpg" alt="">
                 </div>
-            </nav>
-
+            </div>
         </div>
-    </header>
+    </nav>
 
-    
-    <footer>
-        <div class="rodape">
-            <p>Fórum Estácio é uma plataforma de interação do curso de Ciência da Computação</p>
-           
-        </div>
-    </footer>
+    <!--------------------------MAIN------------------------------>
 
-   
-    
+    <main>
+        <div class="container">
+            <!--========================= LEFT ================================-->
+            <div class="left">
+                <a class="profile">
+                    <div class="profile-photo">
+                        <img src="images/profile-1.jpg">
+                    </div>
+                    <div class="handle">
+                        <h4>Diana Ayi</h4>
+                        <p class="text-muted">
+                            @dayi
+                        </p>
+                    </div>
+                </a>
+                <!----------------------- SIDEBAR ------------------------->
+                <div class="sidebar">
+                    <a class="menu-item active">
+                        <span><i class="uil uil-home"></i></span>
+                        <h3>Home</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="uil uil-book"></i></span>
+                        <h3>Cadeiras</h3>
+                    </a>
+                    <a class="menu-item" id="notifications">
+                        <span><i class="uil uil-bell"> <small class="notifications-count">6+</small> </i></span>
+                        <h3>Notificações</h3>
+                        <!--------------------------NOTIFICATION POPUP------------------------->
+                        <div class="notification-popup">
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="images/profile-2.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Keke Bejamin</b> accept your friend request
+                                    <small class="text-muted">2 DAYS AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="images/profile-3.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Keke Bejamin</b> Deu like em seu post
+                                    <small class="text-muted">1 HORA ATRÁS</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="images/profile-4.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Keke Bejamin</b> comentou em um post em que você está marcado
+                                    <small class="text-muted">4 MINUTOS ATRÁS</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="images/profile-5.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Luiza Villar</b> comentou em seu post
+                                    <small class="text-muted">1 DIA ATRÁS</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="images/profile-6.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Keke Bejamin</b> aceitou sua solicitação de amizade
+                                    <small class="text-muted">3 DIAS ATRÁS</small>
+                                </div>
+                            </div>
+                            <!--------------------------END NOTIFICATION POPUP------------------------->
+                        </div>
+                    </a>
+                    <a class="menu-item" id="messages-notifications">
+                        <span><i class="uil uil-envelope"><small class="notifications-count">9+</small></i></span>
+                        <h3>Mensagens</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="uil uil-bookmark"></i></span>
+                        <h3>Itens Salvos</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="uil uil-palette"></i></span>
+                        <h3>Tema</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="uil uil-setting"></i></span>
+                        <h3>Configurações</h3>
+                    </a>
+                </div>
+                <!-----------------------END OF SIDEBAR ------------------------->
+                <label for="create-post" class="btn btn-primary">Criar Post</label>
+            </div>
+            <!-----------------------END OF LEFT ------------------------->
+
+
+
+
+            <!--========================= MIDDLE ================================-->
+            <!------------------------CREATE POST----------------------->
+            <div class="middle">
+                <form class="create-post">
+                    <div class="profile-photo">
+                        <img src="images/profile-1.jpg">
+                    </div>
+                    <input type="text" placeholder="Qual a sua dúvida?" id="create-post">
+                    <input type="submit" value="Post" class="btn btn-primary">
+                </form>
+
+                <!--------------------------- FEEDS --------------------------->
+                <div class="feeds">
+                    <!--------------------------- FEED 1 --------------------------->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="images/profile-8.jpg">
+                                </div>
+                                <div class="info">
+                                    <h4>Ruan Lucas</h4>
+                                    <small>15 MINUTOS ATRÁS</small>
+                                </div>  
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+
+                        <div class="caption">
+                            <div class="title">
+                                <h3>Qual a diferença da tag button para a label? <span class="tag">html</span></h3>
+                            </div>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+
+                        <div class="photo">
+                            <img src="images/feed-6.jpg">
+                        </div>
+
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span>
+                                    <i class="uil uil-heart"></i>
+                                </span>
+                                <span>
+                                    <i class="uil uil-comment-dots"></i>
+                                </span>
+                            </div>
+                            <div class="bookmark">
+                                <span>
+                                    <i class="uil uil-bookmark-full"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                    <!--------------------------- FEED 2 --------------------------->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="images/profile-8.jpg">
+                                </div>
+                                <div class="info">
+                                    <h3>Ruan Lucas</h3>
+                                    <small>15 MINUTE AGO</small>
+                                </div>  
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+                        <div class="photo">
+                            <img src="images/feed-5.jpg">
+                        </div>
+
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span>
+                                    <i class="uil uil-heart"></i>
+                                </span>
+                                <span>
+                                    <i class="uil uil-comment-dots"></i>
+                                </span>
+                                <span>
+                                    <i class="uil uil-share-alt"></i>
+                                </span>
+                            </div>
+                            <div class="bookmark">
+                                <span>
+                                    <i class="uil uil-bookmark-full"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            <span> <img src="images/profile-10.jpg" alt=""> </span>
+                            <span> <img src="images/profile-11.jpg" alt=""> </span>
+                            <span> <img src="images/profile-12.jpg" alt=""> </span>
+                            <p>Curtido por<b>Ernest Achiver</b> and <b>2,323 others</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Ruan Lucas</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="harsh-tag">#lifestyle</span></p>
+                        </div>
+                        <div class="comments text-muted">View all 277 comments</div>
+                    </div>
+                    <!--------------------------- FEED 3 --------------------------->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="images/profile-8.jpg">
+                                </div>
+                                <div class="info">
+                                    <h3>Ruan Lucas</h3>
+                                    <small>15 MINUTOS ATRÁS</small>
+                                </div>  
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+                        <div class="photo">
+                            <img src="images/feed-2.jpg">
+                        </div>
+
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span>
+                                    <i class="uil uil-heart"></i>
+                                </span>
+                                <span>
+                                    <i class="uil uil-comment-dots"></i>
+                                </span>
+                                <span>
+                                    <i class="uil uil-share-alt"></i>
+                                </span>
+                            </div>
+                            <div class="bookmark">
+                                <span>
+                                    <i class="uil uil-bookmark-full"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            <span> <img src="images/profile-10.jpg" alt=""> </span>
+                            <span> <img src="images/profile-11.jpg" alt=""> </span>
+                            <span> <img src="images/profile-12.jpg" alt=""> </span>
+                            <p>Curtido por <b>Ernest Achiver</b> e <b>2,323 outros</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Ruan Lucas</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="harsh-tag">#lifestyle</span></p>
+                        </div>
+                        <div class="comments text-muted">Ver todos os 277 comentarios</div>
+                    </div>
+                </div>
+                <!---------------------------END OF FEEDS --------------------------->
+            </div>
+            <!--====================== END OF MIDDLE ==========================-->
+
+            <!--============================== RIGHT ======================================-->
+            <div class="right">
+                <!----------------------- MESSAGES --------------------->
+                <div class="messages">
+                    <div class="heading">
+                        <h4>Mensagens</h4> <i class="uil uil-edit"></i>
+                    </div>
+                    <!------------------------- SEARCH BAR --------------------->
+                    <div class="search-bar">
+                        <i class="uil uil-search"></i>
+                        <input type="search" placeholder="Pesquisar..." id="message-search">
+                    </div>
+                    <!----------------------- MESSAGES CATEGORY --------------------->
+                    <div class="category">
+                        <h6 class="active">Recentes</h6>
+                        <h6>Geral</h6>
+<!--                      <h6 class="messages-requests">Requests(7)</h6>               -->  
+                    </div>
+                    <!----------------------- MESSAGE --------------------->
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="images/profile-16.jpg">
+                        </div>
+                        <div class="message-body">
+                            <h5>Teia Muller</h5>
+                            <p class="text-muted">Just woke up bruh</p>
+                        </div>
+                    </div>
+                    <!----------------------- MESSAGE --------------------->
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="images/profile-17.jpg">
+                        </div>
+                        <div class="message-body">
+                            <h5>Phela Thompson</h5>
+                            <p class="text-muted">lol u right</p>
+                        </div>
+                    </div>
+                    <!----------------------- MESSAGE --------------------->
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="images/profile-18.jpg">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>Daniela Jackson</h5>
+                            <p class="text-bold">2 new messages</p>
+                        </div>
+                    </div>
+                    <!----------------------- MESSAGE --------------------->
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="images/profile-19.jpg">
+                        </div>
+                        <div class="message-body">
+                            <h5>Ivan Msiza</h5>
+                            <p class="text-bold">ok</p>
+                        </div>
+                    </div>
+                </div>
+                <!----------------------- END OF MESSAGES --------------------->
+
+                <!------------------------------ RANKING --------------------------------->
+                <div class="ranking">
+                    <div class="heading">
+                        <h4>Ranking</h4>
+                    </div>
+                    <div class="position">
+                        <div class="profile-photo">
+                            <img src="images/profile-2.jpg" alt="">
+                        </div>
+                        <div class="position-user">
+                            <h5>Débora Mello</h5>
+                            <p>Cienstista Maluco</p>
+                        </div>
+                        <div class="position-number">
+                            <h6># 1</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <!----------------------- FRIEND REQUESTS --------------------->
+<!--
+                <div class="friend-requests">
+                    <h4>Solicitações</h4>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="images/profile-15.jpg" alt="">
+                            </div>
+                            <div>
+                                <h5>Hajia Bintu</h5>
+                                <p class="text-muted">
+                                    8 amigos em comum
+                                </p>
+                                
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary">
+                                Aceitar
+                            </button>
+                            <button class="btn">
+                                Negar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="images/profile-10.jpg" alt="">
+                            </div>
+                            <div>
+                                <h5>Maya Lewy</h5>
+                                <p class="text-muted">
+                                    8 mutual friends
+                                </p>
+                                
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary">
+                                Aceitar
+                            </button>
+                            <button class="btn">
+                                Negar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="images/profile-20.jpg" alt="">
+                            </div>
+                            <div>
+                                <h5>Hadja Bintu</h5>
+                                <p class="text-muted">
+                                    8 mutual friends
+                                </p>
+                                
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary">
+                                Aceitar
+                            </button>
+                            <button class="btn">
+                                Negar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+-->
+
+                <!-------------------- END OF FRIEND REQUESTS ------------------->
+                <!--=========================== END OF RIGHT ===================================-->
+            </div>
+    </main>
+
+    <!--==================================== THEME CUSTOMIZATION ==========================================-->
+    <script src="index.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --color-white: rgb(246, 246, 255);
+    --color-light: hsl(244, 65%, 83%);
+    --color-gray: hsl(252, 3%, 69%);
+    --color-primary:hsl(140, 82%, 56%);
+    --color-sucess: hsl(120, 95%, 65%);
+    --color-dark: hsl(252, 29%, 10%);
+    --color-danger: hsl(0, 95%, 65%);
+    --color-black: hsl(231, 30%, 13%);
+    
+    
+
+    --border-radius: 2rem;
+    --card-border-radius: 1rem;
+    --btn-padding: 0.6rem 2rem;
+    --search-padding: 0.6rem 1rem;
+    --card-padding: 1rem;
+    --tag-padding: 0rem 0.5rem;
+    --tag-border-radius: 3rem;
+
+    --sticky-top-left: 5.4rem;
+    --sticky-top-right: -18rem;
+}
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-light);
+    background: var(--color-dark);
+    overflow-x: hidden ;
+}
+
+/*GENERAL STYLES*/
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.profile-photo{
+    width: 2.7rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+.btn{
+    display:inline-block;
+    padding: var(--btn-padding);
+    font-weight: 500;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: all 300ms ease;
+    font-size: 0.9rem;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+.btn-primary{
+    background-color: var(--color-primary);
+    color: var(--color-dark);
+}
+
+.text-bold{
+    font-weight: 500;
+    color: var(--color-white);
+}
+
+.text-muted{
+    color: var(--color-gray);
+}
+
+/*===============================NavBar===============================*/
+nav{
+    width: 100%;
+    background: var(--color-light);
+    padding: 0.7rem 0;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .container .logo {
+    color: var(--color-dark);
+}
+
+.search-bar{
+    background: var(--color-dark);
+    border-radius: var(--border-radius);
+    padding: var(--search-padding);    
+}
+
+.search-bar input[type="search"]{
+    background: transparent;
+    width: 30vw;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    color: var(--color-white);
+}
+
+nav .search-bar input[type="search"]::placeholder {
+    color: var(--color-gray);
+}
+
+nav .create {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+/*====================================== MAIN =====================================*/
+main{
+    position: relative;
+    top: 5.4rem;
+}
+
+main .container{
+    display: grid;
+    grid-template-columns: 18vw auto 20vw;
+    column-gap: 2rem;
+    position: relative;
+}
+
+/*============================== LEFT ==============================*/
+main .container .left{
+    height: max-content;
+    position: sticky;
+    top: var(--sticky-top-left);
+}
+
+main .container .left .profile{
+    padding: var(--card-padding);
+    background: var(--color-black);
+    border-radius: var(--card-border-radius);
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    width: 100%;
+}
+
+/*============================== SIDEBAR ==============================*/
+.left .sidebar{
+    margin-top: 1rem;
+    background: var(--color-black);
+    border-radius: var(--card-border-radius);
+}
+
+.left .sidebar .menu-item {
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    cursor: pointer;
+    transition: all 300ms ease;
+    position: relative;
+}
+
+.left .sidebar .menu-item:hover{
+    background-color: var(--color-dark);
+}
+
+.left .sidebar i{
+    font-size: 1.4rem;
+    color: var(--color-light);
+    margin-left: 2rem;
+    position: relative;
+}
+
+.left .sidebar h3{
+    margin-left: 1.5rem;
+    font-size: 1rem;
+}
+
+.left .sidebar .active {
+    background: var(--color-dark);
+}
+
+.left .sidebar .active i, 
+.left .sidebar .active h3 {
+    color: var(--color-primary);
+}
+
+.left .sidebar .active::before {
+    content: "";
+    display: block;
+    width: 0.5rem;
+    height: 100%;
+    position: absolute;
+    background: var(--color-primary);
+}
+
+.left .sidebar .menu-item:first-child.active {
+    border-top-left-radius: var(--card-border-radius);
+    overflow: hidden;
+}
+
+.left .sidebar .menu-item:last-child.active {
+    border-bottom-left-radius: var(--card-border-radius);
+    overflow: hidden;
+}
+
+.left .btn{
+    margin-top: 1rem;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/*--========================= MIDDLE ================================--*/
+
+/*------------------------ CADEIRAS -----------------------*/
+.middle .subjects {
+    background: var(--color-black);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    bottom: 5rem;
+    margin-bottom: 1rem;
+
+}
+
+.middle .subjects h1 {
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+.middle .subjects .subject-icon {
+    font-size: 1.9rem;
+}
+
+.middle .subject-container {
+    display: grid;
+    grid-template-rows: 10% 10%;
+    gap: 5rem;   
+}
+
+.middle .subject-bottom {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.2rem;
+}
+
+.middle .subject-bottom h5 {
+    color: var(--color-dark);
+}
+
+.middle .module {
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--border-radius);
+    transition: all 400ms ease;
+}
+
+.middle .module:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+/*------------------------ END OF CADEIRAS SECTION -----------------------*/
+
+
+/*------------------------CREATE POST-----------------------*/
+.middle .create-post {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--color-black);
+    padding: 0.4rem var(--card-padding);
+    border-radius: var(--border-radius);
+}
+
+.middle .create-post input[type="text"] {
+    justify-self: start;
+    width: 100%;
+    padding-left: 1rem;
+    background: transparent;
+    color: var(--color-light);
+    margin-right: 1rem;
+}
+
+/*--====================== END OF MIDDLE ==========================-*/
+
+/*--============================== RIGHT ======================================*/
+main .container .right {
+    height: max-content;
+    position: sticky;
+    top: var(--sticky-top-right);
+    bottom: 0;
+}
+
+/*-------------------------- RANKING -------------------------*/
+.right .ranking {
+    margin-top: 1rem;
+    background: var(--color-black);
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+}
+
+.right .ranking .heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.right .ranking .position {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    justify-content: space-between;   
+}
+
+.right .position .profile-photo {
+    position: relative;
+}
+
+.right .position .profile-photo img {
+    border-radius: 50%;
+}
+
+.right .ranking .position:last-child {
+    margin: 0;
+}
+
+
+.right .ranking .position-user h5 {
+    color: var(--color-primary);
+    font-size: 0.9rem;
+}
+
+.right .ranking .position p {
+    color: var(--color-light);
+    font-size: 0.8rem;
+}
+.right .ranking .position h6 {
+    font-size: 0.8rem;
+    color: var(--color-primary);
+}
+/*--=========================== END OF RIGHT ==================================*/
+
+/*--================================ END OF MAIN ========================================*/
+
+/*--============================== FOOTER ======================================*/
+footer {
+    background: var(--color-primary);
+    color: var(--color-dark);
+    position: relative;
+    bottom: 0;
+    margin-top: 7rem;
+    padding-top: 5rem;
+    font-size: 0.9rem;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5rem;
+    padding: var(--card-padding);
+}
