@@ -228,16 +228,12 @@ main .container .left .profile{
     padding: 1rem 0;
 }
 
-/*--========================= MIDDLE ================================--*/
+/*--================================= MIDDLE =============================================--*/
 
 /*------------------------ CADEIRAS -----------------------*/
 .middle .subjects {
-    background: var(--color-black);
-    padding: var(--card-padding);
-    border-radius: var(--card-border-radius);
     bottom: 5rem;
     margin-bottom: 1rem;
-
 }
 
 .middle .subjects h1 {
@@ -250,6 +246,10 @@ main .container .left .profile{
 }
 
 .middle .subject-container {
+    background: var(--color-black);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-bottom: 2rem;
     display: grid;
     grid-template-rows: 10% 10%;
     gap: 5rem;   
