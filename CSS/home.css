@@ -40,7 +40,7 @@ body{
     overflow-x: hidden ;
 }
 
-/*GENERAL STYLES*/
+/*ESTILOS GERAIS*/
 .container{
     width: 80%;
     margin: 0 auto;
@@ -84,6 +84,10 @@ img{
 
 .text-muted{
     color: var(--color-gray);
+}
+
+a {
+    color: var(--color-light);
 }
 
 

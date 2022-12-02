@@ -64,7 +64,6 @@ main {
     font-size: 40px;
     font-weight: 600;
     display: flex;
-    font-family: monospace;
     justify-content: center;
     margin-bottom: 2rem;
     color: #39F278;
@@ -83,8 +82,8 @@ form {
     position: relative;
     display: block;
     justify-content: center;
-
 }
+
 .input-field h3 {
     font-size: 12px;
     font-weight: 400;
@@ -96,9 +95,9 @@ form {
     border: 2px solid #6867C4;
     outline: none;
     width: 260px;
-    height: 37.2px;
+    height: 2rem;
     margin-bottom: 1rem;
-    border-radius: 5px;
+    border-radius: 0.6rem;
     background-color: #6867C4;
     color: #fff;
 }
@@ -117,9 +116,7 @@ form h1{
     color: #fff;
     font-size: 12px;
     font-weight: 400;
-    text-decoration: none;
-    font-family: monospace;
-   
+    text-decoration: none;  
 }
 
 form a {
@@ -127,9 +124,6 @@ form a {
     font-size: 12px;
     font-weight: 400;
     text-decoration: none;
-    font-family: monospace;
-    
-
 }
 
 form a:link {
@@ -145,18 +139,16 @@ form a:hover{
     text-decoration: underline;
 }
 
-
-
 form input[type="submit"] {
-    margin-top: 2rem;
-    padding: 0.4rem;
+    margin-top: 1.2rem;
+    padding: 0.6rem 2rem;
     background-color: #39F278;
     cursor: pointer;
     color: #121782;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: 600;
-    border-radius: 10px;
-    transition: all 0.3s ease;
+    border-radius: 2rem;
+    transition: all 300ms ease;
 }
 
 form input[type="submit"]:hover {
