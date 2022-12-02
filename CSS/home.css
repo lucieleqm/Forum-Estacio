@@ -86,9 +86,6 @@ img{
     color: var(--color-gray);
 }
 
-a {
-    color: var(--color-light);
-}
 
 
 /*===============================NavBar===============================*/
@@ -148,6 +145,10 @@ main .container{
     grid-template-columns: 18vw auto 20vw;
     column-gap: 2rem;
     position: relative;
+}
+
+main .container a {
+    color: var(--color-light);
 }
 
 /*============================== LEFT ==============================*/
@@ -544,6 +545,7 @@ main .container .right {
     gap: 1rem;
 }
 
+/*Responsividade*/
 /* =============================== MEDIA QUERIES FOR SMALL LAPTOPS AND BIG TABLETS ================================*/ 
 
 @media screen and (max-width: 1200px) {
