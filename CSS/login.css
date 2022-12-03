@@ -125,7 +125,7 @@ form a {
 form a:hover {
     color: #39F278;
 }
-/*
+/* #1 usando no input no html continuar 
 form input[type="submit"] {
     margin-top: 4rem;
     padding: 0.4rem;
@@ -149,7 +149,7 @@ form input[type="submit"]:hover {
 button {
     margin-top: 4rem;
     padding: 0.4rem;
-    background-color: rgb(39,39,135) ;
+    background-color: rgba(39, 39, 135, 0) ;
     color: #121782;
     border-radius: 2rem;
     transition: all 0.3s ease;
