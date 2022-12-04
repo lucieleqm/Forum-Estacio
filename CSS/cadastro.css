@@ -116,8 +116,8 @@ form {
     font-size: 12px;
     color: rgba(255, 255, 255, 0.699);
 }
-form a {
-    color: #fff;
+form h1 a {
+    color: lime;
     font-size: 12px;
     font-weight: 400;
     text-decoration: none;
@@ -127,7 +127,7 @@ form a:hover{
 }
 form h1{
     margin-top: 0.5rem;
-    color: rgb(255, 255, 255);
+    color: rgb(231, 231, 231);
     font-size: 12px;
     font-weight: 400;
     text-decoration: none;  
@@ -137,7 +137,6 @@ form a:link {
     text-decoration: none;
 }
 form a:visited{
-    color: #39f277;
     background-color: transparent;
     text-decoration: none;
 }
@@ -174,6 +173,7 @@ button {
     background-color: rgba(39, 39, 135, 0) ;/* transparencia zero pra sumir o fundo do botão*/
     border-radius: 2rem;
     transition: all 0.3s ease;
+     
 }
 
 
@@ -188,9 +188,9 @@ button:hover {
 .click {
     margin: 0px;
     padding: 0.6rem 2rem;
+    color: #121782;
     background-color: #39F278 ;    
     cursor: pointer;
-    color: #121782;
     font-size: 0.8rem;
     font-weight: 600;
     border-radius: 2rem;
