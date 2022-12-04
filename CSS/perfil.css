@@ -109,7 +109,7 @@ nav .container {
 nav .container .logo {
     color: var(--color-dark);
 }
-
+/* nav aba de pesquisa e logo do perfil parte css abaixo!*/
 .search-bar{
     background: var(--color-dark);
     border-radius: var(--border-radius);
@@ -160,7 +160,7 @@ main .container .left{
 
 main .container .left .profile{
     padding: var(--card-padding);
-    background: var(--color-black);
+    background: hsla(140, 82%, 56%, 0.605);
     border-radius: var(--card-border-radius);
     display: flex;
     align-items: center;
@@ -168,7 +168,8 @@ main .container .left .profile{
     width: 100%;
 }
 
-/*============================== SIDEBAR ==============================*/
+/*============================== sidebar ==============================*/
+
 .left .sidebar{
     margin-top: 1rem;
     background: var(--color-black);
@@ -245,7 +246,10 @@ main .container .left .profile{
     width: 100%;
     text-align: center;
     padding: 1rem 0;
+
 }
+
+
 
 /*--------------------------NOTIFICATION POPUP-------------------------*/
 .left .notification-popup {
@@ -286,9 +290,34 @@ main .container .left .profile{
 
 
 .middle h1 {
-    color: red;
+    color: rgb(255, 0, 0);
     margin-top: 200px;
 }
+
+.perfil {
+    margin: 90px 0px 0px 20px;
+    padding: 0px 0px 0px 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+}
+.perfil > h2 {
+    color: var(--color-gray);
+    margin-left: 10px;
+    padding: 40px 0px 0px 10px;
+}
+.fotoperfil{
+    width: 110px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+
+
+
+
 
 
 

@@ -18,18 +18,7 @@
             <a href="home.html">
                 <h2 class="logo">Descoding...</h2>
             </a>
-            <div class="search-bar">
-                <i class="uil uil-search"></i>
-                <input type="search" placeholder="Pesquise por palavras-chave, assuntos, ou pessoas">
-            </div>
-            <div class="create">
-                <label class="btn btn-primary" for="create-post">Perguntas</label>
-                <div class="profile-photo">
-                    <a href="perfil.html">
-                        <img src="images/profile-1.jpg" alt="">
-                    </a>
-                </div>
-            </div>
+            
         </div>
     </nav>
 
@@ -40,9 +29,10 @@
             <!--========================= LEFT ================================-->
             <div class="left">
                 <a href="perfil.html" class="profile">
-                    <div class="profile-photo">
+                    <div class="profile-photo" >
                         <img src="images/profile-1.jpg">
                     </div>
+                    
                     <div class="handle">
                         <h4>Diana Ayi</h4>
                         <p class="text-muted">
@@ -52,7 +42,7 @@
                 </a>
                 <!----------------------- SIDEBAR ------------------------->
                 <div class="sidebar">
-                    <a href="home.html" class="menu-item active">
+                    <a href="home.html" class="menu-item"><!-- retirado o active depois do menu-item para da enfase ao perfil-->
                         <span><i class="uil uil-home"></i></span>
                         <h3>Home</h3>
                     </a>
@@ -131,7 +121,8 @@
                     </a>
                 </div>
                 <!-----------------------END OF SIDEBAR ------------------------->
-                <label for="create-post" class="btn btn-primary">Criar Post</label>
+                <!--abaixo houve a troca do criar pergunta para edição de perfil por favor rever logica pra caso de alteração abaixo.-->
+                <label for="create-post" class="btn btn-primary">Editar Perfil</label>
             </div>
             <!-----------------------END OF LEFT ------------------------->
 
@@ -142,9 +133,17 @@
            
             <div class="middle"> 
 
-                <h1>
-                    AQUIII É O PAULOOOO!!
-                </h1>
+              <div class="perfil">
+            <p>
+                <img src="Images/profile-1.jpg" align="left" alt="foto" class="fotoperfil">
+                <h2>&nbsp&nbsp&nbsp Diana Ayi</h2><!-- &nbsp foi utilizado pra da um espaço entra text/img -->
+            </p>
+
+
+
+
+              </div>
+               
 
                 
                 <!--====================== END OF MIDDLE ==========================-->
