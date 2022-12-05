@@ -1,0 +1,16 @@
+O sistema de ranqueamento deste site possui os seguintes aspectos:
+- O usuário receberá pontos decorrentes de sua interação e, também, da interação de outros usuários na plataforma.<br>
+
+- A pontuação adquirida pelo usuário se traduzirá em mais relevância dentro da plataforma.<br>
+- Os 10 (dez) usuários mais bem colocados no ranking terão direito a participar da aba “Top participantes”, onde cada publicação deste usuário ficará disponível por até 150 (cento e cinquenta) dias corridos, desde que o usuário consiga ficar durante esse tempo entre os 20 (vinte) mais bem colocados no ranking.<br>
+- Cada tópico criado no site dará 100 (cem) pontos ao usuário que o criou.<br>
+- O comentário feito em tópico de terceiro poderá render pontos caso este comentário ganhe curtidas. Cada curtida dará 50 (cinquenta) pontos ao usuário que a recebeu.<br>
+- Os usuários irão adquirir selos que variam conforme a pontuação: 
+# Entre 0 (zero) e 100 (cem) pontos, o usuário receberá o selo “Cachorro do mato”.<br>
+# Entre 101 (cento e um) e 300 (trezentos) pontos, o usuário receberá o selo “Rato atômico”.<br>
+# Entre 301 (trezentos e um) e 500 (quinhentos) pontos, o usuário receberá o selo “Capivara dos Alpes Suíços”.<br>
+# Entre 501 (quinhentos e um) e 700 (setecentos) pontos, o usuário receberá o selo “Coelho platinado”.<br>
+# Entre 701 (setecentos e um) e 1000 (mil) pontos, o usuário receberá o selo “Rinoceronte intergaláctico”.<br>
+# Acima de 1000 (mil) pontos, o usuário receberá o selo “Tubarão-Cabeça-de-Enciclopédia”<br>
+- O usuário que permanecer por 150 (cento e cinquenta) dias corridos entre os 20 (vinte) primeiros colocados do ranking terá direito a um certificado de 10 (dez) horas complementares.<br>
+- Cada ponto adquirido terá validade de 150 (cento e cinquenta) dias corridos.<br>
