@@ -319,12 +319,14 @@ main .container .right {
     padding: var(--card-padding);
 }
 
-.right .ranking .heading {
+.right .ranking .heading, h4 {
     display: flex;
+    color: var(--color-primary);
     align-items: center;
     justify-content: space-between;
     margin-bottom: 1rem;
 }
+
 
 .right .ranking .position {
     display: flex;

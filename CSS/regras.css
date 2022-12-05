@@ -246,14 +246,21 @@ main .container .left .profile{
     font-size: 1.9rem;
 }
 
-.middle .subject-container {
+.middle .subject-container  {
     background: var(--color-black);
+    color: beige;
     padding: var(--card-padding);
     border-radius: var(--card-border-radius);
     margin-bottom: 2rem;
-    display: grid;
+    display: block;
     grid-template-rows: 0% 10%;
-       
+    font-family: 'Times New Roman', Times, serif;
+    
+    
+}
+.middle .subject-container h1 {
+     
+    color: var(--color-primary);
 }
 
 .middle .subject-bottom {
