@@ -324,7 +324,7 @@ main .container .left .profile{
     border: none;
 }
 .perfil > h2 {
-    color: var(--color-gray);
+    color: rgba(204, 0, 255, 0.872);
     margin-left: 10px;
     padding: 40px 0px 0px 10px;
 }
@@ -335,10 +335,26 @@ main .container .left .profile{
 }
 
 .middle .bio{
-    background-color: red;
+    background-color: var(--color-danger);
     display: block;
-    margin: 32px;
-    padding: 160px;
+    margin: 0px;
+    padding: 50px;
+    border-radius: 0px 0px 20px 20px;
+}
+.middle .bio h4 {
+    margin: 0px;
+} 
+.middle .bio span {
+    margin: 0px;
+}
+.middle .bio ol {
+    margin: 0px;
+    display: flex;
+}
+.middle .bio .destaque {
+    margin: 0px;
+    color: var(--color-primary);
+
 }
 
 
