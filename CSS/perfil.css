@@ -337,6 +337,7 @@ main .container .left .profile{
 .middle .bio{
     background-color: var(--color-danger);
     display: block;
+    color: whitesmoke;
     margin: 0px;
     padding: 50px;
     border-radius: 0px 0px 20px 20px;
@@ -345,6 +346,7 @@ main .container .left .profile{
     margin: 0px;
 } 
 .middle .bio span {
+    color: aqua;
     margin: 0px;
 }
 .middle .bio ol {
